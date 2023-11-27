@@ -4,7 +4,7 @@ require rust-snapshot-${PV}.inc
 
 LIC_FILES_CHKSUM = "file://COPYRIGHT;md5=c2cccf560306876da3913d79062a54b9"
 
-INSANE_SKIP:${PN}:class-native = "already-stripped"
+INSANE_SKIP_${PN}_class-native = "already-stripped"
 
 do_compile () {
     rust_runx build --stage 2
